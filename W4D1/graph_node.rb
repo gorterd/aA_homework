@@ -1,3 +1,5 @@
+require "set"
+
 class GraphNode
     attr_reader :val, :neighbors
     attr_writer :neighbors
