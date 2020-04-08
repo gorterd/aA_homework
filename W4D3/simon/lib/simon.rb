@@ -54,20 +54,20 @@ class Simon
   end
 
   def require_sequence
-    # user_seq = []
+    user_seq = []
 
-    # seq.each do |correct_col|
-    #   system("clear")
-    #   print "Your Sequence: "
-    #   user_seq.each {|user_col| print "#{user_col.upcase} "}
-    #   puts "\n\nNext Color: "
-    #   next_guess = gets.chomp
-    #   user_seq << next_guess
-    #   unless next_guess.downcase == correct_col
-    #     self.game_over = true
-    #     return
-    #   end
-    # end
+    seq.each do |correct_col|
+      system("clear")
+      print "Your Sequence: "
+      user_seq.each {|user_col| print "#{user_col.upcase} "}
+      puts "\n\nNext Color: "
+      next_guess = gets.chomp
+      user_seq << next_guess
+      unless next_guess.downcase == correct_col
+        self.game_over = true
+        return
+      end
+    end
   end
 
   def add_random_color
