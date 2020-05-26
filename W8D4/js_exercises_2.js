@@ -63,6 +63,7 @@ Elephant.paradeHelper = function (elephant) {
     console.log(`${elephant.name} is trotting on by!`);
 }
 
+debugger
 herd.forEach(Elephant.paradeHelper);
 
 
